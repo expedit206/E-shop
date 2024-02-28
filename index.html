@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <title>e.shop</title>
+</head>
+
+<body>
+    <!-- ####################### -->
+    <!-- Navigation -->
+    <!-- ####################### -->
+    <nav >
+        <div class="logo"> <a href="#">E<span>SHOP</span>
+            </a>
+        </div>
+
+        <ul class="navigation">
+            <li>
+                <a href="#home" class="active">Home</a>
+            </li>
+            <li>
+                
+                <a href="#news">Nouveautés</a>
+            </li>
+            <li>
+                <a href="#products">Produits</a>
+            </li>
+            <li>
+                <a href="#reviews">Avis</a>
+            </li>
+        </ul>
+
+        <div class="navigation-icones">
+            <i id="search-icon" class="fa fa-search"></i>
+            <i id="cart-icon" class="fa fa-cart-plus"></i>
+            <i id="user-icon" class="fa fa-user"></i>
+            <i id="burger-menu" class="fa fa-navicon"></i>
+        </div>
+
+
+        <!-- rechecher -->
+        <div class="search-container">
+            <input type="search" placeholder="que rechercher vous">
+        </div>
+
+        <!-- panier -->
+
+        <div class="cart-container">
+            <div class="cart-card">
+                <img src="./image/panier-01.png" alt="">
+                <div class="card-text">
+                    <h3>T-shirt 12A</h3>
+                    <span>30£</span>
+                    <span>2X</span>
+                </div>
+                <i class="fa fa-trash"></i>
+            </div>
+
+            <div class="cart-card">
+                <img src="./image/panier-02.png" alt="">
+                <div class="card-text">
+                    <h3>T-shirt 16A</h3>
+                    <span>25£</span>
+                    <span>2X</span>
+                </div>
+                <i class="fa fa-trash"></i>
+            </div>
+            <h3>Total : 55£</h3>
+            <a href="#" class="btn">Voir panier</a>
+        </div>
+
+        <div class="user-container">
+            <h2>
+                Connectez vous</h2>
+            <input type="emai" placeholder="E_mail">
+            <input type="password" placeholder="Mot de passe">
+            <input type="submit" class="fa fa-user btn-user" placeholder="Connexion">
+            <p>Mot de passe oublié ?<a href="#">Redefinir mot de passe</a>
+            </p>
+            <p>Pas de compte?<a href="#">Créer un compte !</a>
+            </p>
+        </div>
+    </nav>
+    <!-- ####################### -->
+    <!-- Home -->
+    <!-- ####################### -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <span>E.commerce</span>
+            <h1>Tendance et tranquilité</h1>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="home_img">
+            <img src="./image/home.png" alt="">
+          
+            </div>
+    </section>
+
+    <!-- ####################### -->
+    <!-- News -->
+    <!-- ####################### -->
+
+
+    <section id="news" class="news">
+        <div class="section-heading">
+            <h2>Nouvelle<span>Arrivage</span>
+            </h2>
+        </div>
+       
+        <!-- slider -->
+    <div class="slider">
+        <div class="slider_nav">
+            <button onclick="previous()" class="slider_nav_button slider_nav_prev"><i
+                    class="fa fa-chevron-circle-left"></i></button> 
+            <button onclick="next()" class="slider_nav_button slider_nav_next"><i
+                    class="fa fa-chevron-circle-right"></i></button>
+        </div>
+        <div class="slider_content">
+            <div class="slider_content_item">
+                <img src="./slider/image/p1.png" alt="image">
+                
+                <a href="#" class="btn">ajouter panier</a>
+            </div>
+            <div class="slider_content_item">
+                <img src="./slider/image/p2.png" alt="image">
+                <a href="#" class="btn">ajouter panier</a>
+                
+            </div>
+            <div class="slider_content_item">
+                <img src="./slider/image/p3.png" alt="image">
+                <a href="#" class="btn">ajouter panier</a>
+                
+            </div>
+            <div class="slider_content_item">
+                <img src="./slider/image/p4.png" alt="image">
+                <a href="#" class="btn">ajouter panier</a>
+                
+            </div>
+            <div class="slider_content_item">
+                <img src="./slider/image/p5.png" alt="image">
+                <a href="#" class="btn">ajouter panier</a>
+                
+            </div>
+            <div class="slider_content_item">
+                <img src="./slider/image/p6.png" alt="image">
+                <a href="#" class="btn">ajouter panier</a>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- slider -->
+    </section>
+
+    <!-- ####################### -->
+    <!-- products -->
+    <!-- ####################### -->
+    <section class="products" id="products">
+        <div class="section-heading">
+            <h2>Nos<span>Produits</span>
+            </h2>
+        </div>
+        <div class="products-container">
+            <div class="products-box">
+                <img src="./image/shop-01.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-01.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-02.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-03.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-04.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-05.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+            </div>
+            <div class="products-box">
+                <img src="./image/shop-06.jpg" alt="">
+                <div class="products-box-content">
+                    <h2>T-shirt</h2>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <span>25£</span>
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ####################### -->
+    <!-- Les avis -->
+    <!-- ####################### -->
+    <section class="reviews" id="reviews">
+        <div class="section-heading">
+            <h2>Avis<span>Client</span>
+            </h2>
+        </div>
+        <div class="reviews-container">
+            <div class="reviews-box">
+                <img src="./image/review-01.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, molestias? Natus, beatae!
+                    Laudantium, nam repellat!</p>
+                <h2>Expedit Dominique</h2>
+            </div>
+
+            <div class="reviews-box">
+                <img src="./image/review-02.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, molestias? Natus, beatae!
+                    Laudantium, nam repellat!</p>
+                <h2>Expedit Torrento</h2>
+            </div>
+
+            <div class="reviews-box">
+                <img src="./image/review-03.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, molestias? Natus, beatae!
+                    Laudantium, nam repellat!</p>
+                <h2>Expedit Derock</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ####################### -->
+    <!-- FOoter -->
+    <!-- ####################### -->
+    <footer>
+        <div class="footer-box">
+            <h2>ESHOP</h2>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h2>Informations</h2>
+            <li><a href="#">Condition de vente</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </div>
+        <div class="footer-box">
+            <h2>Paiements</h2>
+            <div class="paiement">
+                <img src="./image/pay-01.png" alt="">
+                <img src="./image/pay-02.png" alt="">
+                <img src="./image/pay-03.png" alt="">
+                <img src="./image/pay-04.png" alt="">
+            </div>
+
+        </div>
+        <div class="footer-box">
+            <h2>Nos locaux</h2>
+            <li><a href="#">Cameroun</a></li>
+            <li><a href="#">Nigeria</a></li>
+            <li><a href="#">Senegal</a></li>
+            <li><a href="#"></a>Cote-d'ivoire</li>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>&copy : ZENWEX(Zenith-Web-Expedit) Tous droits reservés et privés mes petits -- 2024</p>
+    </div>
+    <script src=" ./app.js"> </script>
+</body>
+
+</html>
